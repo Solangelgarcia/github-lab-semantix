@@ -1,0 +1,104 @@
+/* ============================================================
+   👇 EL COLOR DE ACENTO ESTÁ ACÁ. Cambiá este valor y mirá qué pasa.
+   Probá con: #e11d74 (rosa)  ·  #f59e0b (naranja)  ·  #10b981 (verde)
+   ============================================================ */
+:root {
+  --acento: #2563eb;        /* 👈 cambiá este color */
+  --acento-suave: #eff2ff;
+  --tinta: #0f172a;
+  --gris: #64748b;
+  --borde: #e2e8f0;
+  --fondo: #f8fafc;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fondo);
+  color: var(--tinta);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+.wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--acento), color-mix(in srgb, var(--acento) 60%, #000));
+  color: white;
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin: 0.4rem 0 0.6rem;
+  line-height: 1.15;
+}
+
+.hero .sub { opacity: 0.92; font-size: 1rem; }
+
+.card {
+  background: white;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hint { color: var(--gris); font-size: 0.9rem; margin-bottom: 0.8rem; }
+
+code {
+  background: var(--acento-suave);
+  color: var(--acento);
+  padding: 0.1rem 0.35rem;
+  border-radius: 5px;
+  font-size: 0.85em;
+}
+
+#participantes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+#participantes li {
+  background: var(--acento-suave);
+  color: var(--acento);
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+.contador {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--acento);
+  font-variant-numeric: tabular-nums;
+}
+
+.pie {
+  text-align: center;
+  color: var(--gris);
+  font-size: 0.82rem;
+  padding-top: 0.5rem;
+}
