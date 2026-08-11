@@ -3,7 +3,7 @@
    Probá con: #e11d74 (rosa)  ·  #f59e0b (naranja)  ·  #10b981 (verde)
    ============================================================ */
 :root {
-  --acento: #2563eb;        /* 👈 cambiá este color */
+  --acento: #e11d74;        /* 👈 cambiá este color */
   --acento-suave: #eff2ff;
   --tinta: #0f172a;
   --gris: #64748b;
